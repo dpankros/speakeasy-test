@@ -1,0 +1,2 @@
+And then we are showing some computed text from JavaScript:
+{{ .Local.SomeComputedText }}

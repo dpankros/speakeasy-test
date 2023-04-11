@@ -1,0 +1,16 @@
+Hello {{ .Local.name }}!
+
+```sjs
+console.log("Hello from JavaScript!"); // Logs message to stdout useful for debugging.
+
+render("This text is rendered from JavaScript!");
+
+context.LocalComputed.SomeComputedText = "This text is computed from JavaScript!";
+sjs```
+
+{{ templateString "tmpl2.stmpl" .LocalComputed }}
+
+
+```sjs
+console.log('Now check out.txt in the root of this project to see the rendered result');
+sjs```
